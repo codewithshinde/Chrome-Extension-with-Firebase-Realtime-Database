@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  
+</head>
+<body style="width:800px; height:800px;">
+
+  <div class="container" >
+      <h2>Himalaya & Kedarnath</h2>
+      <p>Check which machine is occupied by whom</p>
+  </div>
+  <div class="container" >  
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#menu1">Himalaya</a></li>
+    </ul>
+  
+    <div class="tab-content"> 
+      <div id="menu1" class="tab-pane fade">
+        <!-- Container (Services Section) -->
+          <div id="services" class="container-fluid text-center">
+        <h2>Jenkins Machine</h2>
+  <h4>Assign yourself to occupy any machine</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+        <span class="glyphicon">
+            <img src="images/machine.jpg" class="media-object" style="width:60px">
+        </span>
+      <h4>HIMAM1</h4>
+      <div class="form-group">
+          <select class="form-control" id="sel1">
+            <option>kshinde</option>
+            <option>deepika</option>
+            <option>rthannee</option>
+          </select>
+        </div>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon">
+          <img src="images/machine.jpg" class="media-object" style="width:60px">
+      </span>
+      <h4>HIMAM2</h4>
+      <div class="form-group">
+          <select class="form-control" id="sel1">
+            <option>FREE</option>
+            <option>kshinde</option>
+            <option>deepika</option>
+            <option>rthannee</option>
+          </select>
+        </div>
+        <button id ="changeColor2" type="button" class="btn btn-success">Occupy</button>
+    </div>
+    <div class="col-sm-4">
+        <span class="glyphicon">
+            <img src="images/machine.jpg" class="media-object" style="width:60px">
+        </span>
+      <p id="changeColor">HIMAM3</p>
+      <div class="form-group">
+          <select class="form-control" id="sel1">
+            <option>kshinde</option>
+            <option>deepika</option>
+            <option>rthannee</option>
+          </select>
+        </div>
+        <button id ="changeColor3" type="button" class="btn btn-success">Occupy</button>
+    </div>
+  </div>
+  <br><br>
+</div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
